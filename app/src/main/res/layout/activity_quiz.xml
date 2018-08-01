@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <!-- TextView: Question -->
+    <TextView android:id="@+id/question_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        />
+
+    <!-- Button: Hint -->
+    <Button android:id="@+id/hint_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hint_btn"
+        android:onClick="giveHint"
+        android:textAllCaps="false"
+        />
+
+    <!-- LinearLayout: True/False buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <!-- Button: True -->
+        <Button android:id="@+id/true_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/true_btn"
+            />
+
+        <!-- Button: False -->
+        <Button android:id="@+id/false_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/false_btn"
+            />
+    </LinearLayout>
+
+    <!-- Button: Next -->
+    <Button android:id="@+id/next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next_btn"
+        android:textAllCaps="false"
+        />
+
+    <!-- TextView: Score -->
+    <TextView android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        />
+
+
+</LinearLayout>

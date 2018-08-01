@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <!-- Main controls (middle of screen) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1"
+        >
+
+        <!-- TextView: Game Over -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="24dp"
+            style="@android:style/TextAppearance.Large"
+            android:text="@string/game_over_text"
+            />
+
+        <!-- TextView: Final Score -->
+        <TextView android:id="@+id/final_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@android:style/TextAppearance.Large"
+            android:padding="24dp"
+            />
+
+        <!-- Button: Play Again -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/play_again_btn"
+            android:onClick="playAgain"
+            />
+
+        <!-- TextView: High Score -->
+        <TextView android:id="@+id/high_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@android:style/TextAppearance.Large"
+            android:padding="24dp"
+            />
+
+        <!-- ImageView: New High Score -->
+        <ImageView android:id="@+id/new_high_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/charlie_brown_snoopy_happy_dance"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+
+    <!-- Global High Scores -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <!-- TextView: Global High Score -->
+        <TextView android:id="@+id/global_high_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@android:style/TextAppearance.Large"
+            android:padding="24dp"
+            />
+
+        <!-- Button: Reset high score -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset_btn"
+            android:onClick="resetHighScore"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

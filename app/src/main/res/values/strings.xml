@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">GeomQuiz</string>
+    <string name="true_btn">True</string>
+    <string name="false_btn">False</string>
+    <string name="next_btn">Next</string>
+    <string name="correct_toast">You betcha!</string>
+    <string name="incorrect_toast">Que horror!</string>
+    <string name="question1">A circle is a polygon.</string>
+    <string name="question2">A polygon is a square.</string>
+    <string name="question3">Triangles are fun.</string>
+    <string name="question4">a^2 + b^2 = c^2 for all integer values of a, b, and c.</string>
+    <string name="question5">Circles are round.</string>
+    <string name="hint_btn">Hint</string>
+    <string name="hint_confirm_text">Are you sure?</string>
+    <string name="confirm_hint_btn">Yes</string>
+    <string name="close_hint_btn">Close</string>
+    <string name="back_btn">Back</string>
+    <string name="game_over_text">Game Over!</string>
+    <string name="play_again_btn">Play Again</string>
+    <string name="reset_btn">Reset High Score</string>
+</resources>
